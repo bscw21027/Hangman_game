@@ -35,7 +35,7 @@ This Hangman Game is a classic word guessing game developed in Python. The game 
 This Hangman Game is licensed under the MIT License. You are free to use, modify, and distribute the code as per the terms of the license.
 
 # Acknowledgements
-- The calculator app is built using the Python programming language.
+- The Hangman game is built using the Python programming language.
 - The project structure and code organization are inspired by best practices for Python projects. 
 
 # Contributing
