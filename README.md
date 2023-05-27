@@ -24,9 +24,8 @@ This Hangman Game is a classic word guessing game developed in Python. The game 
 - Run the following command to start the game:
 
 Copy code
-```
+```python
 python hangman.py
-
 ```
 Follow the on-screen instructions to play the game. Guess letters one at a time and try to uncover the secret word.
 
