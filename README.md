@@ -23,13 +23,21 @@ This Hangman Game is a classic word guessing game developed in Python. The game 
 
 - Run the following command to start the game:
 
-Copy code
+- Copy code
 ```python
 python hangman.py
 ```
-Follow the on-screen instructions to play the game. Guess letters one at a time and try to uncover the secret word.
+- Follow the on-screen instructions to play the game. Guess letters one at a time and try to uncover the secret word.
 
+- If you want to quit the game at any time, simply press Ctrl + C or close the terminal window.
 
-If you want to quit the game at any time, simply press Ctrl + C or close the terminal window.
+# License
+This Hangman Game is licensed under the MIT License. You are free to use, modify, and distribute the code as per the terms of the license.
 
-Enjoy playing Hangman!
+# Acknowledgements
+The Hangman Game project was developed by bscw@itu.edu.pk. Special thanks to.
+
+# Contributing
+Contributions to the Hangman Game project are welcome! If you encounter any issues or have ideas for improvements, feel free to open an issue or submit a pull request on the GitHub repository.
+
+Enjoy Playing Hangman!
