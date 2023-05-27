@@ -1,15 +1,34 @@
-# Hangman_game
+# Hangman Game
+This Hangman Game is a classic word guessing game developed in Python. The game allows players to test their word-guessing skills by trying to figure out a secret word, one letter at a time, before running out of attempts.
 
-Hangman is a classic word-guessing game that challenges players to decipher a hidden word by guessing individual letters. It's a popular game enjoyed by people of all ages and can be implemented using the Python programming language.
+# Features
+- **Random Word Selection:** The game selects a random word from a predefined list of words, ensuring a new and unique challenge with each playthrough.
 
-In a typical implementation of the Hangman game in Python, the game starts by selecting a random word from a predetermined list. The chosen word is then displayed to the player as a series of underscores, with each underscore representing a letter in the word. The player's task is to guess letters one by one to uncover the hidden word.
+- **User Input Validation:** The program validates user inputs, ensuring that only single alphabetic characters are accepted. It also prevents repeated guesses by keeping track of letters already guessed by the player.
 
-As the player makes guesses, the program checks if the guessed letter is present in the chosen word. If the letter is correct, it replaces the corresponding underscore(s) with the guessed letter. If the letter is incorrect, the program keeps track of the incorrect guesses and displays a portion of the Hangman figure, typically drawn using ASCII art, to depict the progress of the game.
+- **Visual Representation:** The game provides a visual representation of the hangman, updating it with each incorrect guess. This feature adds an interactive and engaging element to the gameplay.
 
-The player continues guessing letters until they have successfully guessed the entire word or until the Hangman figure is completed. In the latter case, the player loses the game. The game can also include a limit on the number of incorrect guesses allowed to add an additional challenge.
+- **Difficulty Levels:** The game offers multiple difficulty levels, allowing players to choose between easy, medium, and hard. The difficulty level determines the length of the secret word and the number of attempts available.
 
-To enhance the user experience, the program can provide feedback to the player after each guess, such as indicating whether the guessed letter is correct or incorrect. It can also display the remaining guesses and a list of letters already guessed.
+- **Score Tracking:** The game keeps track of the player's score, recording the number of wins and losses. This feature allows players to challenge themselves to improve their performance.
 
-Once the game is over, the program can prompt the player to play again or exit the game.
+- **User-Friendly Interface:** The game provides a simple and intuitive command-line interface, making it easy for players to interact with the program and enjoy the gameplay.
 
-Implementing Hangman in Python is a great opportunity to practice concepts like strings, lists, conditionals, loops, and functions. Additionally, adding features like word categories, difficulty levels, and a graphical user interface (GUI) can enhance the game further.
+# How to Play
+- Clone the repository or download the source code files to your local machine.
+
+- Make sure you have Python installed on your system.
+
+- Open a terminal or command prompt and navigate to the directory where the game files are located.
+
+- Run the following command to start the game:
+
+Copy code
+(''' 
+python hangman.py
+Follow the on-screen instructions to play the game. Guess letters one at a time and try to uncover the secret word.
+''')
+
+If you want to quit the game at any time, simply press Ctrl + C or close the terminal window.
+
+Enjoy playing Hangman!
