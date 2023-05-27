@@ -1,132 +1,76 @@
 import random
+from stages import stages
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+word_list = ["aardvark", "baleia", "camelo", "doninha", "elefante",
+             "flamingo", "galinha", "hiena", "iguana", "jararaca",
+             "kiwi", "lince", "morsa", "narval", "ovelha", "papagaio",
+             "quati", "rinoceronte", "suricate", "tartaruga", "urso",
+             "vagalume", "wallaby", "ximango", "yak", "zebra"]
 
-word_list = [ "aardvark",  "baboon", "camel"]
-# chosing random word from the list
+
 chosen_word = random.choice(word_list)
-print ( f" The chosen word is {chosen_word} ")
-# creating an empty list, for adding elements into the list later on.
-display = []
-# adding '_' no. of time the length in list
-for letter in range (len(chosen_word)):
-    display+='_'
-# printing the result    
-print (display)  
-'''
-def forward():
-    for l in range(6):
-        print(stages[-position])
-'''
+guess = input("Guess a letter: ").lower()
 
-
-
-
-
-  
-
-# creating a function
-def fun():
-  guess = input (" Enter a letter to guess : ")
-  if guess in chosen_word:
-    print( f" {guess} IS present in {chosen_word} ")
-  else:
-    print( f" {guess} IS NOT present in {chosen_word} ")
-# This for runs to replace guess with letters
-  for position in range(len(chosen_word)):
-    letter = chosen_word[position]    
+# checking if the word matches
+for letter in chosen_word:
     if letter == guess:
-      display[position]=letter
-    #  print( stages[-position])
-  #  print( stages[position])
-  print ( display)        
-# creating chose list to add elements of string chosen_word to compare
-chose = []
-for st in range(len(chosen_word)):
-    chose += chosen_word[st]
-# running loop and guessing letters until letters become equal to word
-for i in range(6):
-    while(chose!=display):    
-       fun()
-
-# displaying if the player has won or not
-if chose==display:
-    print ( "\n Lists are similar. You've Won!!! ")
-else :
-    print (  "\n They aren't. You Lost!!!")
+        print("Guess")
+    else:
+        print("Fail")
+"""
+#     Creating an empty List called display.
+#     For each letter in the chosen_word, adding a "_" to 'display'.
+#     So if the chosen_word was "apple", display should be ["_", "_", "_", "_", "_"]
+#     with 5 "_" representing each letter to guess. """
 
 
+display = []
+for letter in range(len(chosen_word)):
+    display += "_"
+
+#     TODO-5: - Looping through each position in the chosen_word;
+#     If the letter at that position matches 'guess' then reveal that letter in the
+#     display at that position.
+#     e.g. If the user guessed "p" and the chosen word was "apple", then display
+#     should be ["_", "p", "p", "_", "_"].
 
 
+for letter in range(0, len(chosen_word)):
+    if chosen_word[letter] == guess:
+        display[letter] = guess  # Using 'letter' as an index
 
 
+#     Printing 'display' and you should see the guessed letter in the correct
+#     position and every other letter replace with "_".
 
+print(display)
 
+game_over = False
+lives = 6
 
+# printing the ASCII art from 'stages' that corresponds to the current number
+#     of 'lives' the user has remaining.
+while game_over is not True:
+    # Displaying lives and asking user for a guess
+    i = -7 + lives
+    print(stages[i])
+    print(f"Lives: {lives}")
+    guess = input("Guess a letter: ").lower()
+    if guess not in chosen_word:
+        lives -= 1
+    # Replacing '_' for correct guessers
+    for letter in range(0, len(chosen_word)):
+        if chosen_word[letter] == guess:
+            display[letter] = guess  # Using 'letter' as an index
+    print(display)
 
-
-
-
-
-
-
-
-
-
-
-    
+    # Defining the 'Game Over'
+    if lives == 0:
+        game_over = True
+        print(stages[0])
+        print(f"You Lose! The word is {chosen_word}.")
+    if not "_" in display:
+        game_over = True
+        print("You win!")
+    if game_over:
+        break
