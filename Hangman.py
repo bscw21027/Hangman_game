@@ -28,11 +28,11 @@ display = []
 for letter in range(len(chosen_word)):
     display += "_"
 
-#     TODO-5: - Looping through each position in the chosen_word;
-#     If the letter at that position matches 'guess' then reveal that letter in the
-#     display at that position.
-#     e.g. If the user guessed "p" and the chosen word was "apple", then display
-#     should be ["_", "p", "p", "_", "_"].
+#  Looping through each position in the chosen_word;
+#  If the letter at that position matches 'guess' then reveal that letter in the
+#  display at that position.
+#  e.g. If the user guessed "p" and the chosen word was "apple", then display
+#  should be ["_", "p", "p", "_", "_"].
 
 
 for letter in range(0, len(chosen_word)):
@@ -49,7 +49,7 @@ game_over = False
 lives = 6
 
 # printing the ASCII art from 'stages' that corresponds to the current number
-#     of 'lives' the user has remaining.
+# of 'lives' the user has remaining.
 while game_over is not True:
     # Displaying lives and asking user for a guess
     i = -7 + lives
