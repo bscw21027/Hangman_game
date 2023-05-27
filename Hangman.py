@@ -40,8 +40,8 @@ for letter in range(0, len(chosen_word)):
         display[letter] = guess  # Using 'letter' as an index
 
 
-#     Printing 'display' and you should see the guessed letter in the correct
-#     position and every other letter replace with "_".
+#  Printing 'display' and you should see the guessed letter in the correct
+#  position and every other letter replaced with "_".
 
 print(display)
 
@@ -50,6 +50,7 @@ lives = 6
 
 # printing the ASCII art from 'stages' that corresponds to the current number
 # of 'lives' the user has remaining.
+
 while game_over is not True:
     # Displaying lives and asking user for a guess
     i = -7 + lives
