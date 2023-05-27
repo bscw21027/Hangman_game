@@ -35,7 +35,7 @@ This Hangman Game is a classic word guessing game developed in Python. The game 
 This Hangman Game is licensed under the MIT License. You are free to use, modify, and distribute the code as per the terms of the license.
 
 # Acknowledgements
-The Hangman Game project was developed by bscw@itu.edu.pk. Special thanks to.
+The Hangman Game project was developed by bscw@itu.edu.pk. 
 
 # Contributing
 Contributions to the Hangman Game project are welcome! If you encounter any issues or have ideas for improvements, feel free to open an issue or submit a pull request on the GitHub repository.
