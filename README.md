@@ -42,6 +42,6 @@ This Hangman Game is licensed under the MIT License. You are free to use, modify
 Contributions to the Hangman Game project are welcome! If you encounter any issues or have ideas for improvements, feel free to open an issue or submit a pull request on the GitHub repository.
 
 # Contact
-If you have any questions, suggestions, or issues, please feel free to contact the project maintainer at bscw@itu.edu.pk
+If you have any questions, suggestions, or issues, please feel free to contact the project maintainer at bsce21027@itu.edu.pk
 
 Enjoy Playing Hangman!
